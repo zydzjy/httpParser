@@ -1,0 +1,29 @@
+POST /EYAS_BIZ_FILE_MANAGER/upload HTTP/1.1
+Accept: image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/xaml+xml, application/x-ms-xbap, */*
+Accept-Language: zh-CN
+Content-Type: multipart/form-data; boundary=---------------------------7e129bf31032
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64; Trident/7.0; LCTE; rv:11.0) like Gecko
+Host: localhost:8080
+Content-Length: 469
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: Webstorm-85fa9f46=9b1abed3-4aa6-43be-830e-4ebe4bbdc73c
+
+-----------------------------7e129bf31032
+Content-Disposition: form-data; name="bizTypeId"
+
+TEST
+-----------------------------7e129bf31032
+Content-Disposition: form-data; name="file"; filename="C:\Users\yuzhou\Desktop\test.txt"
+Content-Type: text/plain
+
+this a test file content1
+this a test file content2
+end!
+-----------------------------7e129bf31032
+Content-Disposition: form-data; name="bizId"
+
+123123123
+-----------------------------7e129bf31032--
