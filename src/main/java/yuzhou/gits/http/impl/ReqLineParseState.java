@@ -3,7 +3,7 @@ package yuzhou.gits.http.impl;
 import yuzhou.gits.commonUtils.BytesChunk;
 import yuzhou.gits.commonUtils.BytesUtils;
 import yuzhou.gits.http.HttpReqMsgParserState;
-import yuzhou.gits.http.impl.ParseEvent;
+import yuzhou.gits.http.ParseEvent;
 import yuzhou.gits.http.ReqMsgParserContext;
 import yuzhou.gits.http.SimpleReqMsgParser;
 import yuzhou.gits.http.message.HttpCommonConstants;

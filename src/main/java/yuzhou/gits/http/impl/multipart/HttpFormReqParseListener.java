@@ -1,7 +1,7 @@
 package yuzhou.gits.http.impl.multipart;
 
 import yuzhou.gits.http.HttpRequestParseListener;
-import yuzhou.gits.http.impl.ParseEvent;
+import yuzhou.gits.http.ParseEvent;
 
 public interface HttpFormReqParseListener extends HttpRequestParseListener{
 	

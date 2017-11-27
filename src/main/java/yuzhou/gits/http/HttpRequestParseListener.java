@@ -1,7 +1,7 @@
 package yuzhou.gits.http;
 
 import yuzhou.gits.http.message.request.HttpRequestException;
-import yuzhou.gits.http.impl.ParseEvent;
+import yuzhou.gits.http.ParseEvent;
 
 public interface HttpRequestParseListener {
 

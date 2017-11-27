@@ -9,7 +9,7 @@ import yuzhou.gits.commonUtils.BytesChunk;
 import yuzhou.gits.http.HttpRequestParseListener;
 import yuzhou.gits.http.ReqMsgParserContext;
 import yuzhou.gits.http.SimpleReqMsgParser;
-import yuzhou.gits.http.impl.ParseEvent;
+import yuzhou.gits.http.ParseEvent;
 import yuzhou.gits.http.message.request.HttpRequestException;
 import yuzhou.gits.http.message.request.HttpRequestNoHandlerException;
 

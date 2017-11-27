@@ -1,4 +1,4 @@
-package yuzhou.gits.http.impl;
+package yuzhou.gits.http;
 
 import yuzhou.gits.http.ReqMsgParserContext;
 

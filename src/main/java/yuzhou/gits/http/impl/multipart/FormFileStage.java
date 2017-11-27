@@ -6,7 +6,7 @@ import java.util.List;
 import yuzhou.gits.commonUtils.BytesChunk;
 import yuzhou.gits.commonUtils.BytesUtils;
 import yuzhou.gits.http.HttpRequestParseListener;
-import yuzhou.gits.http.impl.ParseEvent;
+import yuzhou.gits.http.ParseEvent;
 import yuzhou.gits.http.ReqMsgParserContext;
 import yuzhou.gits.http.message.request.HttpRequestException;
 

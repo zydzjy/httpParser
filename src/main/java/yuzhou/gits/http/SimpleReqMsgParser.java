@@ -9,7 +9,7 @@ import java.util.Map;
 import yuzhou.gits.commonUtils.BytesChunk;
 import yuzhou.gits.http.exceptionHandler.ExceptionHandler;
 import yuzhou.gits.http.impl.DefaultReqURIHandler;
-import yuzhou.gits.http.impl.ParseEvent;
+import yuzhou.gits.http.ParseEvent;
 import yuzhou.gits.http.message.request.HttpRequestException;
 import yuzhou.gits.http.message.response.HttpResponseMessage;
 

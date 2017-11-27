@@ -1,7 +1,7 @@
 package yuzhou.gits.http.impl.multipart;
 
 import yuzhou.gits.commonUtils.BytesChunk;
-import yuzhou.gits.http.impl.ParseEvent;
+import yuzhou.gits.http.ParseEvent;
 import yuzhou.gits.http.message.request.HttpRequestException;
 
 public class DefaultMultipartFormFileDataParseListener implements MultipartFormDataParseListener {
