@@ -32,7 +32,7 @@ public class ReqLineParseState implements HttpReqMsgParserState {
 			int uriEndIdx = BytesUtils.indexOf(data.getBytesBuf(), uriStartIdx, HttpCommonConstants.SP) - 1;
 			uri = new BytesChunk(data.getBytesBuf(), uriStartIdx, uriEndIdx);
 			this.exit(ctx);
-			ctx.setNextState(new HeaderParseState());
+			ctx.setCurrState(new HeaderParseState());
 		} catch (Exception e) {
 			HttpRequestException _e = new HttpRequestNoHandlerException();
 			_e.setErrorCode(HttpRequestNoHandlerException.ERROR_CODE_NO_HANDLER_FOR_URI);

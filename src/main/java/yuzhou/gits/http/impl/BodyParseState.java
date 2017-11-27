@@ -36,7 +36,7 @@ public class BodyParseState implements HttpReqMsgParserState {
 			throw new HttpRequestException(e);
 		}finally{
 			ctx.getParser().end(ctx);
-			ctx.setNextState(null);
+			ctx.setCurrState(null);
 		}
 	}
 }

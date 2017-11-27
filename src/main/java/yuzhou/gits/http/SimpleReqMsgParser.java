@@ -83,7 +83,7 @@ public class SimpleReqMsgParser implements HTTPRequestMessageParser {
 		
 		// TODO:end all
 		parseCtx.setReadMuch(false);
-		parseCtx.setNextState(null);
+		parseCtx.setCurrState(null);
 		parseCtx.destroyAllListeners();
 		
 		if (!parseCtx.isRequestResponsed()) {

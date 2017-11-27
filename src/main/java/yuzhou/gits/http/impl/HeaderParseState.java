@@ -45,7 +45,7 @@ public class HeaderParseState implements HttpReqMsgParserState {
 					_parser.setContentLength(contentLength);
 					bodyParseState.setParser(_parser);
 				}
-				ctx.setNextState(bodyParseState);
+				ctx.setCurrState(bodyParseState);
 				break;
 			} else {
 				String headerField = aNewLine.toString();

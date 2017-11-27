@@ -76,7 +76,7 @@ public class ReqMsgParserContext {
 		return currState;
 	}
 
-	public void setNextState(HttpReqMsgParserState currState) {
+	public void setCurrState(HttpReqMsgParserState currState) {
 		this.currState = currState;
 	}
 
