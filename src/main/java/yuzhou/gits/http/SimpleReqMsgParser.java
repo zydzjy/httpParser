@@ -20,7 +20,7 @@ import yuzhou.gits.http.message.response.HttpResponseMessage;
 									CRLF
 									[ message-body ]
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-public class SimpleReqMsgParser implements HTTPRequestMessageParser {
+public class SimpleReqMsgParser implements HttpRequestMessageParser {
 	public static ExceptionHandler DEFAULT_EXCEPTION_HANDLER = null;
 	public final static DefaultReqURIHandler DEFAULT_REQ_LINE_HANDLER = new DefaultReqURIHandler();
 

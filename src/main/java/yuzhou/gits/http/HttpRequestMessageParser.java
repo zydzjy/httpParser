@@ -4,7 +4,7 @@ import yuzhou.gits.http.ParserConfig;
 import yuzhou.gits.http.ReqMsgParserContext;
 import yuzhou.gits.http.message.request.HttpRequestException;
 
-public interface HTTPRequestMessageParser {
+public interface HttpRequestMessageParser {
 	
 	public void init(ParserConfig config) throws HttpRequestException;
 	public void destroy() throws HttpRequestException;
