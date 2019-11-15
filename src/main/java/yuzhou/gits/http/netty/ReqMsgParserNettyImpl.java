@@ -3,8 +3,8 @@ package yuzhou.gits.http.netty;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandler.Sharable;
-import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.AttributeKey;
 import yuzhou.gits.http.ReqMsgParserContext;
 import yuzhou.gits.http.SimpleReqMsgParser;
@@ -43,25 +43,11 @@ public class ReqMsgParserNettyImpl extends SimpleReqMsgParser {
 	protected static final AttributeKey<ReqMsgParserContext> attrKey = AttributeKey.newInstance("chilId");
 	
 	@Sharable
-	public final class HttpMsgServerHandler extends ChannelHandlerAdapter {
+	public final class HttpMsgServerHandler extends ChannelInboundHandlerAdapter {
 
 		@Override
-		public void channelActive(ChannelHandlerContext ctx) throws Exception {
-			//System.out.println("channel added!");
-			//ctx.channel().close().sync();
-		}
-		
-		@Override
-	    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
-			/*ReqMsgParserContext parserCtx = (ReqMsgParserContext) 
-					ctx.attr(attrKey).get();*/
-			//TODO:how to handle these
-			//parserCtx.getParser().end(parserCtx);
-		}
-		
-		@Override
 		public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
-			 
+			
 			ReqMsgParserContext parserCtx = new ReqMsgParserContext();
 			parserCtx.setParser(ReqMsgParserNettyImpl.this);
 			ctx.attr(attrKey).set(parserCtx);
